@@ -10,3 +10,6 @@
 ||
 |1. 识别出(identify)应该被对应的 loader 进行转换(transform)的那些文件。(test 属性)|
 |2. 转换这些文件，从而使其能够被添加到依赖图中（并且最终添加到 bundle 中）(use 属性)|
+
+
+ loader 仅在每个文件的基础上执行转换，而插件(plugins) 更常用于（但不限于）在打包模块的 “compilation” 和 “chunk” 生命周期执行操作和自定义功能
